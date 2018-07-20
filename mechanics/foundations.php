@@ -45,8 +45,6 @@
     //new Village
   }
 
-
-
-  $village = new Village('Rome', $production);
+  $village = new Village($production);
 
 ?>
