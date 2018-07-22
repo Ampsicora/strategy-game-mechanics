@@ -12,7 +12,7 @@
     protected $stock_limit = 800;
 
 
-    public function __construct(Wood $wood, Stone $stone, Iron $iron)
+    public function __construct (Wood $wood, Stone $stone, Iron $iron)
     {
       $this->resources = ['wood' => $wood, 'stone' => $stone, 'iron' => $iron];
     }

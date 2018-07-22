@@ -7,6 +7,8 @@
   <body>
 
     <?php include 'mechanics/foundations.php' ?>
+    <?php include 'mechanics/architect.php' ?>
+
 
     <?php
       echo $wood->getName();
@@ -40,6 +42,15 @@
       echo "<br>" . $stockRoom->getStockLimit();
       $stockRoom->incrementStockLimit(70);
       echo "<br>" . $stockRoom->getStockLimit();
+
+    ?>
+
+    <hr>
+
+
+    <?php
+
+      print_r($architect->getInfrastructures());
 
     ?>
 

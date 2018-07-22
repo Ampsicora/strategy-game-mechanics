@@ -3,7 +3,7 @@
   require 'production.php';
 
   /**
-   * Village is an abstraction to code all villages in a scalable way
+   * Foundations is an abstraction to code all kind of villages in a scalable way
    */
   abstract class Foundations
   {
@@ -16,7 +16,7 @@
     protected $production;
 
 
-    public function __construct(Production $production)
+    public function __construct (Production $production)
     {
       $this->production = $production;
     }
@@ -37,13 +37,17 @@
     }
   }
 
+
+
   /**
    * Village is the basic type of town in the game
    */
   class Village extends Foundations
   {
-    //new Village
+    protected $name = "User's Village";
   }
+
+
 
   $village = new Village($production);
 
