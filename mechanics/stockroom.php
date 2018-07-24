@@ -36,6 +36,7 @@
     {
       return $this->stock_limit;
     }
+
   }
 
 
