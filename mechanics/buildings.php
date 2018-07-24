@@ -1,6 +1,8 @@
 <?php
 
-// Civic
+/*--------------------------------------------|
+|                   Civic                     |
+\--------------------------------------------*|
 
 /**
  * TownHall: Celebrations are held in the town hall.
@@ -45,7 +47,11 @@ class Embassy extends Infrastructure
   protected $requirements = [];
 }
 
-// Economic
+
+
+/*--------------------------------------------|
+|                 Economic                    |
+\--------------------------------------------*|
 
 /**
  * Sawmill: Here wood delivered by your lumberjacks is processed.
@@ -121,7 +127,12 @@ class Market extends Infrastructure
 }
 
 
-// Military
+
+
+/*--------------------------------------------|
+|                  Military                   |
+\--------------------------------------------*|
+
 /**
  * Barrack: Infantry can be trained in the barracks.
  */
