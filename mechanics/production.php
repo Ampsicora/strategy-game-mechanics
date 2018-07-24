@@ -1,6 +1,6 @@
 <?php
 
-require 'stockroom.php';
+require 'stockroom.php'; //to remove
 
   /**
    * Production defines the amount of resources per hour that each village can produce
