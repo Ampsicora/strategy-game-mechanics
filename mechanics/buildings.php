@@ -5,7 +5,7 @@
 \--------------------------------------------*|
 
 /**
- * TownHall: Celebrations are held in the town hall.
+ * TownHall: Class that represent the main infrastructure.
  */
 class TownHall extends Infrastructure
 {

@@ -2,25 +2,29 @@
 <?php
 
   /**
-   *  Resource is an abstraction to code all resources in a scalable way
+   *  Resource: Abstract class that define Resource's feature.
    **/
   abstract class Resource
   {
+    // Resource's name
     protected $name;
 
+    // Resource's quantity
     protected $quantity = 600;
 
-
+    // Function used to save resource's name
     public function __construct ($name)
     {
       $this->name = $name;
     }
 
+    // Function used to get resource's name
     public function getName ()
     {
       return $this->name;
     }
 
+    // Function used to get resource's quantity
     public function getQuantity ()
     {
       return $this->quantity;
@@ -51,6 +55,7 @@
     // iron resource
   }
 
+  // Class's object declaretion
   $wood = new Wood("wood");
   $stone = new Stone("stone");
   $iron = new Iron("iron");
