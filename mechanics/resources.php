@@ -18,6 +18,16 @@
       $this->name = $name;
     }
 
+    public function incrementQuantity ()
+    {
+
+    }
+
+    public function decrementQuantity ()
+    {
+
+    }
+
     // Function used to get resource's name
     public function getName ()
     {
