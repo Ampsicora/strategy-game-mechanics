@@ -12,11 +12,6 @@
     // Resource's quantity
     protected $quantity = 600;
 
-    // Function used to save resource's name
-    public function __construct ($name)
-    {
-      $this->name = $name;
-    }
 
     public function incrementQuantity ()
     {
@@ -46,7 +41,7 @@
    */
   class Wood extends Resource
   {
-    // wood resource
+    protected $name = 'wood';
   }
 
   /**
@@ -54,7 +49,7 @@
    */
   class Stone extends Resource
   {
-    // stone resource
+    protected $name = 'stone';
   }
 
   /**
@@ -62,8 +57,9 @@
    */
   class Iron extends Resource
   {
-    // iron resource
+    protected $name = 'iron';
   }
+  
 
   // Class's object declaretion
   $wood = new Wood("wood");
