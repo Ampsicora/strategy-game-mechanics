@@ -1,4 +1,4 @@
-# Strategy Game
+# Strategy Game - WIP
 
 <p align="center">
   <img src="https://svgsilh.com/svg/2029530-8bc34a.svg" alt="Warrior Image" width="auto" height="250px" />
