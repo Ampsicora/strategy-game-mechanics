@@ -18,6 +18,7 @@ class TownHall extends Infrastructure
   protected $requirements = [];
 }
 
+
 /**
  * Academy: In the academy new unit types can be developed.
  */
@@ -97,6 +98,7 @@ class IronMine extends Infrastructure
   protected $requirements = [];
 }
 
+
 /*
  * Warehouse: The resources wood, stone and iron are stored in your warehouse.
  */
@@ -125,7 +127,6 @@ class Market extends Infrastructure
 
   protected $requirements = [];
 }
-
 
 
 
@@ -162,6 +163,7 @@ class Fortification extends Infrastructure
   protected $requirements = [];
 }
 
+
 /**
  * Armory: The weapons and armour of your warriors are enhanced in the smithy's melting furnaces.
  */
@@ -175,6 +177,7 @@ class Armory extends Infrastructure
 
   protected $requirements = [];
 }
+
 
 
 // Economic

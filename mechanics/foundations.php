@@ -1,6 +1,8 @@
 <?php
 
   require 'production.php';
+  require 'architect.php';
+  require 'player.php';
 
   /**
    * Foundations: Abstract class that represent all the features of an entity in which will be loaded player's village.
@@ -13,16 +15,21 @@
     // Attribute that stand for the foundations's name
     protected $name;
 
-    // Array where all the infrastructures are saved
-    protected $infrastructures = [];
+    protected $owner;
 
     // This attribute represent the resource's production
     protected $production;
 
-    // Function used to set the production.
-    public function __construct (Production $production)
+    protected $architect;
+
+
+    public function __construct (Player $owner, Production $production, Architect $architect)
     {
+      $this->owner = $owner;
+
       $this->production = $production;
+
+      $this->architect = $architect;
     }
 
     // Function used to set Foundation's name
@@ -31,16 +38,29 @@
       $this->name = $name;
     }
 
-    //Function used to get Foundation's name
+    public function getId ()
+    {
+      return $this->id;
+    }
+
     public function getName ()
     {
       return $this->name;
     }
 
-    // Function used to get Foundation's production
+    public function getOwner ()
+    {
+      return $this->owner;
+    }
+
     public function getProduction ()
     {
       return $this->production;
+    }
+
+    public function getInfrastructures ()
+    {
+      return $this->architect->infrastructures;
     }
   }
 
@@ -54,7 +74,8 @@
     protected $name = "User's Village";
   }
 
-  // Class's object declaretion
-  $village = new Village($production);
+
+
+  $village = new Village($player, $production, $architect);
 
 ?>
